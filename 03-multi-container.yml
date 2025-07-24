@@ -11,6 +11,7 @@ spec:
      image: nginx
    - name: almalinux
      image: almalinux:9
+     command: ["sleep", "1000"] #always run the container
 
 # apiVersion: v1
 # kind: Pod
