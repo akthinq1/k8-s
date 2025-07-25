@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: configMap
+metadata:
+  name: config-map-demo
+  lables: 
+    project: config-map
+    env: config
+data:
+  COURSE: "DevSecOps"
+  Duration: "120HRS"
