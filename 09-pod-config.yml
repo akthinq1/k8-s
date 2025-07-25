@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
   name: pod-configMap-demo
 spec: 
-  containes: 
+  containers: 
     - name: nginx
       image: nginx
       envFrom:
