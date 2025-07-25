@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: env-demo
   labels:
+    purpose: config
     project: env-demo
     component: env
     tier: frontend
