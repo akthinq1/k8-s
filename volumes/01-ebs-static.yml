@@ -37,11 +37,11 @@ metadata:
     project: roboshop
     purpose: ebs-static-robo
 spec:
+  nodeSelector:
+    topology.kubernetes.io/zone: us-east-1c
   containers:
     - name: nginx
-      image: nginx
-      nodeSelector:
-        topology.kubernetes.io/zone: us-east-1c
+      image: nginx  
       volumeMounts: 
       - name: persistent-storage
         mountPath: /usr/share/nginx/html
