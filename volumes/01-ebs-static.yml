@@ -55,13 +55,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata: 
-  name: nginx-lb
+  name: ebs-static
   labels:
     purpose: ebs-static-demo
     project: roboshop
     environment: dev
   spec:
-    type: loadBalancer
+    type: LoadBalancer
     selector:
       purpose: ebs-static-robo
       project: roboshop
