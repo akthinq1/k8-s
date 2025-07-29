@@ -57,15 +57,15 @@ kind: Service
 metadata: 
   name: ebs-static
   labels:
-    purpose: ebs-static-demo
+    purpose: ebs-static-robo
     project: roboshop
     environment: dev
-  spec:
-    type: LoadBalancer
-    selector:
-      purpose: ebs-static-robo
-      project: roboshop
-    ports:
-      - protocol: TCP
-        port: 80
-        targetPort: 80
+spec:
+  type: LoadBalancer
+  selector:
+    purpose: ebs-static-robo
+    project: roboshop
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
